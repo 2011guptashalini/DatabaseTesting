@@ -22,6 +22,9 @@ public class BaseTest {
 	public  ResultSet rs1 = null;
 	public  ResultSet rs2 = null;
 	
+	public  Statement stmt1 = null;
+	public  Statement stmt2 = null;
+	
 	 
 		@BeforeClass
 		Connection setup() throws SQLException
@@ -48,6 +51,16 @@ public class BaseTest {
 		rs.next();
 		String spNameFromQuery = rs.getString("Name");
 		return spNameFromQuery;
+		}
+		
+		public String sf_exists(String sfName) throws SQLException
+		{
+		stmt=con.createStatement();
+		String query= "SHOW FUNCTION STATUS WHERE Name ='" + sfName + "'";
+	    rs=stmt.executeQuery(query); //Change the name
+		rs.next();
+		String sfNameFromQuery = rs.getString("Name");
+		return sfNameFromQuery;
 		}
 		
 		// Comparing two results sets

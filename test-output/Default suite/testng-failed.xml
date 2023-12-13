@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DatabaseTesting.DatabaseTesting.DataBaseTesting">
+      <class name="DatabaseTesting.DatabaseTesting.StoredFunctionTest">
         <methods>
+          <include name="test_callSF_CustomerLevelFromSP"/>
           <include name="setup"/>
-          <include name="test_callSP_get_order_by_cust"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- DatabaseTesting.DatabaseTesting.DataBaseTesting -->
+      </class> <!-- DatabaseTesting.DatabaseTesting.StoredFunctionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

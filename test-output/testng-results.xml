@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-13T16:13:24 IST" name="Default suite" finished-at="2023-12-13T16:13:25 IST" duration-ms="592">
+  <suite started-at="2023-12-13T18:42:13 IST" name="Default suite" finished-at="2023-12-13T18:42:14 IST" duration-ms="578">
     <groups>
     </groups>
-    <test started-at="2023-12-13T16:13:24 IST" name="Default test" finished-at="2023-12-13T16:13:25 IST" duration-ms="592">
-      <class name="DatabaseTesting.DatabaseTesting.DataBaseTesting">
-        <test-method is-config="true" signature="setup()[pri:0, instance:DatabaseTesting.DatabaseTesting.DataBaseTesting@c88a337]" started-at="2023-12-13T16:13:24 IST" name="setup" finished-at="2023-12-13T16:13:25 IST" duration-ms="439" status="PASS">
+    <test started-at="2023-12-13T18:42:13 IST" name="Default test" finished-at="2023-12-13T18:42:14 IST" duration-ms="578">
+      <class name="DatabaseTesting.DatabaseTesting.StoredFunctionTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DatabaseTesting.DatabaseTesting.StoredFunctionTest@d5b810e]" started-at="2023-12-13T18:42:13 IST" name="setup" finished-at="2023-12-13T18:42:14 IST" duration-ms="446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_callSP_get_order_by_cust()[pri:2, instance:DatabaseTesting.DatabaseTesting.DataBaseTesting@c88a337]" started-at="2023-12-13T16:13:25 IST" name="test_callSP_get_order_by_cust" finished-at="2023-12-13T16:13:25 IST" duration-ms="93" status="PASS">
+        <test-method signature="test_callSF_CustomerLevelFromSP()[pri:2, instance:DatabaseTesting.DatabaseTesting.StoredFunctionTest@d5b810e]" started-at="2023-12-13T18:42:14 IST" name="test_callSF_CustomerLevelFromSP" finished-at="2023-12-13T18:42:14 IST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_callSP_get_order_by_cust -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DatabaseTesting.DatabaseTesting.DataBaseTesting@c88a337]" started-at="2023-12-13T16:13:25 IST" name="tearDown" finished-at="2023-12-13T16:13:25 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- test_callSF_CustomerLevelFromSP -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DatabaseTesting.DatabaseTesting.StoredFunctionTest@d5b810e]" started-at="2023-12-13T18:42:14 IST" name="tearDown" finished-at="2023-12-13T18:42:14 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- DatabaseTesting.DatabaseTesting.DataBaseTesting -->
+      </class> <!-- DatabaseTesting.DatabaseTesting.StoredFunctionTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

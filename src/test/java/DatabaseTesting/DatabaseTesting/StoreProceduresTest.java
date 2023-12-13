@@ -11,13 +11,7 @@ import org.testng.annotations.Test;
 public class StoreProceduresTest extends BaseTest {
 	
 	// Store procedure exist or not. Just need to change the name
-	@Test(priority=1)
-	void test_StoreProcedureExist_SelectAllCustomers1() throws SQLException {
-	stmt=con.createStatement();
-    rs=stmt.executeQuery("SHOW PROCEDURE STATUS WHERE Name = 'SelectAllCustomers';");//Change the name
-	rs.next();
-	Assert.assertEquals(rs.getString("Name"), "SelectAllCustomers");//Change the name here
-	}
+
 	
 	@Test(priority=1)
 	void test_StoreProcedureExist_SelectAllCustomers() throws SQLException {
