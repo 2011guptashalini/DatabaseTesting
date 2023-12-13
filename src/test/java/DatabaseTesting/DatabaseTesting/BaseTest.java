@@ -19,6 +19,9 @@ public class BaseTest {
 	public  ResultSet rs = null;
 	public CallableStatement cstmt = null;
 	
+	public  ResultSet rs1 = null;
+	public  ResultSet rs2 = null;
+	
 	 
 		@BeforeClass
 		Connection setup() throws SQLException
@@ -65,6 +68,24 @@ public class BaseTest {
 
 			
 			
+		}
+		
+		// Calling Stored Procedure without any argument and return variables.
+		
+		public boolean test_callSP(String spName, String tbName) throws SQLException {
+			
+			String callSp = "{CALL " + spName + "()}";
+			cstmt = con.prepareCall(callSp);
+			rs1 = cstmt.executeQuery();		
+			
+			stmt=con.createStatement();
+			String query= "Select * from " + tbName + "";
+		    rs2=stmt.executeQuery(query); //Change the name 
+		    
+		    boolean match = compareResultsSets(rs1,rs2);
+		    return match;
+		    
+		    
 		}
 		
 		

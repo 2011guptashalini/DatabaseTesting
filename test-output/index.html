@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="DatabaseTesting.DatabaseTesting.DataBaseTesting" class="method navigator-link" hash-for-method="test_StoreProcedureExist_SelectAllCustomers">test_StoreProcedureExist_SelectAllCustomers</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="DatabaseTesting.DatabaseTesting.DataBaseTesting" class="method navigator-link" hash-for-method="test_callSP_get_order_by_cust">test_callSP_get_order_by_cust</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,9 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_StoreProcedureExist_SelectAllCustomers">
-                  </a> <!-- test_StoreProcedureExist_SelectAllCustomers -->
-                  <span class="method-name">test_StoreProcedureExist_SelectAllCustomers</span>
+                  <a name="test_callSP_get_order_by_cust">
+                  </a> <!-- test_callSP_get_order_by_cust -->
+                  <span class="method-name">test_callSP_get_order_by_cust</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/wr/w8y8_fyj65v4z_rk4wpjsm8m0000gn/T/testng-eclipse-1207611934/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/wr/w8y8_fyj65v4z_rk4wpjsm8m0000gn/T/testng-eclipse--304254869/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,7 +147,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;DatabaseTesting.DatabaseTesting.DataBaseTesting&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;test_StoreProcedureExist_SelectAllCustomers&quot;/&gt;
+          &lt;include name=&quot;test_callSP_get_order_by_cust&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- DatabaseTesting.DatabaseTesting.DataBaseTesting --&gt;
     &lt;/classes&gt;
@@ -191,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_StoreProcedureExist_SelectAllCustomers')
+data.setCell(0, 1, 'test_callSP_get_order_by_cust')
 data.setCell(0, 2, 'DatabaseTesting.DatabaseTesting.DataBaseTesting')
-data.setCell(0, 3, 52);
+data.setCell(0, 3, 93);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 ms</span>
+              <span class="suite-total-time">Total running time: 93 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,25 +213,31 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">7 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">DatabaseTesting.DatabaseTesting.DataBaseTesting</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">test_StoreProcedureExist_SelectAllCustomerByCity</span>
+                <span class="ignored-method-name">test_callSP_SelectAllCustomerByCity</span>
                 <br/>
-                <span class="ignored-method-name">test_StoreProcedureExist_InsertSupplierProduct</span>
+                <span class="ignored-method-name">test_StoreProcedureExist_SelectAllCustomers1</span>
                 <br/>
                 <span class="ignored-method-name">test_StoreProcedureExist_geCustomerShipping</span>
                 <br/>
+                <span class="ignored-method-name">test_StoreProcedureExist_SelectAllCustomers</span>
+                <br/>
                 <span class="ignored-method-name">test_StoreProcedureExist_get_order_by_cust</span>
+                <br/>
+                <span class="ignored-method-name">test_StoreProcedureExist_InsertSupplierProduct</span>
+                <br/>
+                <span class="ignored-method-name">test_callSP_SelectAllCustomerByCityAndPin</span>
+                <br/>
+                <span class="ignored-method-name">test_StoreProcedureExist_SelectAllCustomerByCity</span>
                 <br/>
                 <span class="ignored-method-name">test_callSP_SelectAllCustomers</span>
                 <br/>
                 <span class="ignored-method-name">test_StoreProcedureExist_SelectAllCustomerByCityAndPin</span>
-                <br/>
-                <span class="ignored-method-name">test_StoreProcedureExist_SelectAllCustomers1</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -249,12 +255,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">test_StoreProcedureExist_SelectAllCustomers</span>
+                <span class="method-name">test_callSP_get_order_by_cust</span>
                 <span class="method-start">450 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">505 ms</span>
+                <span class="method-start">551 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

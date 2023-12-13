@@ -6,8 +6,8 @@
       <class name="DatabaseTesting.DatabaseTesting.DataBaseTesting">
         <methods>
           <include name="setup"/>
+          <include name="test_callSP_get_order_by_cust"/>
           <include name="tearDown"/>
-          <include name="test_StoreProcedureExist_geCustomerShipping"/>
         </methods>
       </class> <!-- DatabaseTesting.DatabaseTesting.DataBaseTesting -->
     </classes>
